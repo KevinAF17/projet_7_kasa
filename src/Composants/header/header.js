@@ -1,6 +1,6 @@
-import logo from '../../Images/logo_kasa.png'
-import {NavLink} from 'react-router-dom'
-import headerStyle from '../header/header.scss';
+import logo from '../../Images/logo_kasa.png';
+import {NavLink} from 'react-router-dom';
+import '../Style/header.scss';
 
 export default function mainHeader(){
     {
