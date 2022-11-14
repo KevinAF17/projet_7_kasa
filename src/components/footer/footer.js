@@ -1,4 +1,4 @@
-import footerStyle from '../footer/footer.scss';
+import footerStyle from '../styles/footer.scss';
 import imageFooter from '../../Images/logo_kasa.png';
 
 
