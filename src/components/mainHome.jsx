@@ -1,6 +1,6 @@
-import '../styles/MainHome.css';
+import '../styles/mainHome.css';
 
-export default function homeCard({cover, title, id}) {
+export default function homeCard({cover, title}) {
     return (
         <div className='mainHome-section'>
                 <div className='mainHome-card'>

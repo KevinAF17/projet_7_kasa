@@ -1,16 +1,14 @@
 .banner{
-    margin-left: 200px;
-    margin-top: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
     width: 1200px;
     height: 250px;
 }
 
 .banner-content{
-    position: absolute;
-    width: 1200px;
+    position: relative;
+    width: 1800px;
     height: 250px;
-    margin-left: 200px;
-    margin-top: 150px;
     background: white;
     border-radius: 25px;
 }
@@ -18,12 +16,9 @@
 .banner-police{
     position: absolute;
     width: 700px;
-    height: 70px;
+    height: 150px;
     margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 25%;
-    margin-bottom: 70%;
-    color: #FFFFFF;
+    color: black;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -35,8 +30,7 @@
 
 .banner-image{
     position: absolute;
-    width: 1200px;
-    height: 1750px;
-    margin-left: 100px;
-    margin-top: -555px;
+    width: 1800px;
+    height: 150px;
+    margin-top: 10px;
     }

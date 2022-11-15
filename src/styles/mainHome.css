@@ -1,17 +1,15 @@
 .mainHome-section {
-
     position: absolute;
-    width: 1240px;
-    height: 829px;
-    left: 100px;
+    width: 1750px;
+    height: 775px;
+    left: 50px;
     top: 437px;
     border-radius: 25px;
     background: #F7F7F7;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    
-    }
+    flex-wrap: wrap;  
+}
     
 .mainHome-card {
     width: 340px;
