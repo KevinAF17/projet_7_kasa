@@ -8,7 +8,23 @@ header{
 
 .header-logo{
     width: 215px;
-    height: 80px
+    height: 80px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.nav-style {
+    text-decoration: none;
+    color: red;
+}
+
+.nav-style:hover{
+    text-decoration: underline;
 }
 
 .header-navigation{

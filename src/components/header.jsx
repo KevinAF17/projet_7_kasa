@@ -7,11 +7,11 @@ export default function Header() {
     return (
        <header className='header'>
         <img className='header-logo' src={logo} alt='Logo Kasa'></img>
-          <nav>
-                   <Link to='/' className=''>
-                      Accueil
+          <nav className='header-nav'>
+                   <Link to='/' className='nav-style'>
+                      <p>Accueil</p>
                    </Link>
-                   <Link to='/about' className=''>
+                   <Link to='/about' className='nav-style'>
                       A Propos
                    </Link>
           </nav>

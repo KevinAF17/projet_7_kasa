@@ -1,6 +1,8 @@
 import '../styles/mainHome.css';
+import {Link} from 'react-router-dom';
+import appartments from '../logements.json';
 
-export default function homeCard({cover, title}) {
+export default function homeCard({cover, title, id}) {
     return (
         <div className='mainHome-section'>
                 <div className='mainHome-card'>

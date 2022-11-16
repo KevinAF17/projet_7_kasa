@@ -1,5 +1,5 @@
 import '../styles/footer.css';
-import ftLogo from '../Images/logo_kasa.png';
+import ftLogo from '../Images/logo_kasa_footer.png';
 
 export default function Footer() {
     return (
