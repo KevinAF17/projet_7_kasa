@@ -1,0 +1,12 @@
+.aboutPage-section {
+    position: absolute;
+    width: 1500px;
+    height: 800px;
+    left: 175px;
+    top: 435px;
+    border-radius: 25px;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+}

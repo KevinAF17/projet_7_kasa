@@ -1,7 +1,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    width: 1550px;
     margin-left: 200px;
     margin-top: 50px;
 }
@@ -21,6 +21,7 @@ header{
 .nav-style {
     text-decoration: none;
     color: red;
+    font-size: 20px;
 }
 
 .nav-style:hover{

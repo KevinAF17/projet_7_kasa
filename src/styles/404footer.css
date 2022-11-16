@@ -1,14 +1,14 @@
-.footer {
+.notfound-footer {
     position: relative;
     width: 1950px;
     height: 209px;
-    margin-top: 890px;
+    margin-top: 100px;
     background: black;
     display: flex;
     flex-direction: column;
 }
     
-.footer-logo {
+.not-found-footer-logo {
     width: 150px;
     position: absolute;
     color: red ;
@@ -20,7 +20,7 @@
     margin-bottom: 15px;
 }
     
-.footer-police {
+.not-found-footer-police {
     position: absolute;
     font-style: normal;
     margin-left: 775px;

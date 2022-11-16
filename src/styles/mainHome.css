@@ -1,8 +1,8 @@
 .mainHome-section {
     position: absolute;
-    width: 1750px;
-    height: 775px;
-    left: 50px;
+    width: 1600px;
+    height: 800px;
+    left: 175px;
     top: 437px;
     border-radius: 25px;
     background: #F7F7F7;
@@ -11,21 +11,75 @@
     flex-wrap: wrap;  
 }
     
-.mainHome-card {
+.mainHome-card-1 {
     width: 340px;
     height: 340px;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-left: 1px;
     margin: 32px;
     background: #FF6060;
 }
-        
+
+.mainHome-card-2 {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px;
+    background: #FF6060;
+}
+
+.mainHome-card-3 {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+    margin: 32px;
+    background: #FF6060;
+}
+
+.mainHome-card-4 {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+    margin: 32px;
+    background: #FF6060;
+}
+
+.mainHome-card-5 {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+    margin: 32px;
+    background: #FF6060;
+}
+
+.mainHome-card-6 {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1px;
+    margin: 32px;
+    background: #FF6060;
+}
+
 .mainHome-Image {
     width: 340px;
     height:340px;
+    border-radius: 10px;
     object-fit: cover;
 }
         

@@ -1,15 +1,16 @@
 .banner{
-    margin-left: 50px;
+    margin-left: 170px;
     margin-top: 50px;
-    width: 1700px;
+    width: 1600px;
     height: 250px;
 }
 
 .banner-police{
     position: absolute;
-    width: 700px;
+    width: 625px;
     height: 150px;
-    margin-left: 25%;
+    margin-left: 525px;
+    margin-top: 40px;
     color: white;
     font-style: normal;
     font-weight: 500;
@@ -21,7 +22,7 @@
 
 .banner-image{
     position: absolute;
-    width: 1800px;
+    width: 1600px;
     height: 225px;
     margin-top: 10px;
     margin-bottom: 50px;
