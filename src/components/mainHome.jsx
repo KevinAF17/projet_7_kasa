@@ -1,32 +1,16 @@
 import '../styles/mainHome.css';
+import { Link } from 'react-router-dom';
+import appartments from '../logements.json'
 
-export default function homeCard({cover, title, id}) {
+export default function HomeCard() {
     return (
         <div className='mainHome-section'>
-                <div className='mainHome-card-1'>
-                    <img src={cover} alt={title} className='mainHome-Image'/>
-                    <h1 className='mainHome-title'>{title}</h1>
-                </div>
-                <div className='mainHome-card-2'>
-                    <img src={cover} alt={title} className='mainHome-Image'/>
-                    <h1 className='mainHome-title'>{title}</h1>
-                </div>
-                <div className='mainHome-card-3'>
-                    <img src={cover} alt={title} className='mainHome-Image'/>
-                    <h1 className='mainHome-title'>{title}</h1>
-                </div>
-                <div className='mainHome-card-4'>
-                    <img src={cover} alt={title} className='mainHome-Image'/>
-                    <h1 className='mainHome-title'>{title}</h1>
-                </div>
-                <div className='mainHome-card-5'>
-                    <img src={cover} alt={title} className='mainHome-Image'/>
-                    <h1 className='mainHome-title'>{title}</h1>
-                </div>
-                <div className='mainHome-card-6'>
-                    <img src={cover} alt={title} className='mainHome-Image'/>
-                    <h1 className='mainHome-title'>{title}</h1>
-                </div>
+                {appartments.map((appartments) => (
+               <Link to={`/appartements/${appartments.id}`} className="mainHome-card-1" key={appartments.id}>
+                  <img src={appartments.cover} alt="logement"className="mainHome-Image"/>
+                     <span className="mainHome-title">{appartments.title}</span>
+               </Link> ))}
         </div>
     )
+
 }

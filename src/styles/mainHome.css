@@ -1,9 +1,9 @@
 .mainHome-section {
     position: absolute;
     width: 1600px;
-    height: 800px;
+    height: 2850px;
     left: 175px;
-    top: 437px;
+    top: 435px;
     border-radius: 25px;
     background: #F7F7F7;
     display: flex;
@@ -86,11 +86,11 @@
 .mainHome-title {
     position: absolute;
     width: 300px;
-    height: 52px;
-    font-family: "Montserrat";
+    height: 325px;
+    margin-left: 5px;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25.67px;
+    font-size: 20px;
+    line-height: 25.50px;
     color: #FFFFFF;
     display: flex;
     align-items: flex-end;

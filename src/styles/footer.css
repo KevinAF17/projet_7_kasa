@@ -1,8 +1,8 @@
 .footer {
     position: relative;
     width: 1950px;
-    height: 209px;
-    margin-top: 890px;
+    height: 215px;
+    margin-top: 2900px;
     background: black;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     margin-left: 775px;
     margin-top: 150px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 25px;
     display: flex; 
     color: white;
 }
