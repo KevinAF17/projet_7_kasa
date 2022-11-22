@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './pages/homepage';
 import About from './pages/about-page';
 import ErrorPage from './pages/404notFound';
