@@ -1,6 +1,9 @@
 import Header from '../components/header';
 import Banner from '../components/banner-2';
-import Description from '../components/description';
+import Reliability from '../components/reliability';
+import Respect from '../components/respect';
+import Service from '../components/service';
+import Safety from '../components/safety';
 import Footer from '../components/footer';
 
 export default function About() {
@@ -8,7 +11,10 @@ export default function About() {
         <div className= 'home'>  
             <Header />
             <Banner />
-            <Description />
+            <Reliability />
+            <Respect />
+            <Service />
+            <Safety />
             <Footer />
         </div>
     )
