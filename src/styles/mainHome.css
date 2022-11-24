@@ -1,9 +1,8 @@
 .mainHome-section {
-    position: absolute;
+    position: relative;
     width: 1600px;
     height: 2850px;
     left: 175px;
-    top: 435px;
     border-radius: 25px;
     background: #F7F7F7;
     display: flex;
