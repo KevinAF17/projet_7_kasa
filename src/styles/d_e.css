@@ -1,7 +1,10 @@
 .inlines {
+    display: flex;
+    flex-direction: row;
     margin-top: 100px;
+    margin-left: 200px;
     position: relative;
-    width: 1500px;
+    width: 1950px;
     height: 200%;
     background: white;
     }

@@ -1,20 +1,20 @@
 import { React } from 'react';
-import { useParams } from "react-router-dom";
-import {locations} from "../components/locations";
+import { useParams } from 'react-router-dom';
 import "../styles/presentation.css";
+import apparts from '../logements.json';
 
 export default function AppartPresentation(){
-    let {id} = useParams()
-    const apparts = locations.getOneAppartment(id)
+    const{id} = useParams()
+    const lodging = apparts.find((lodging) => lodging.id === id)
 
     return(
 
         <><div className='presentation_section'>
-            <h1 className='presentation-police-title'>{apparts.title}</h1>
-            <h2 className='presentation-police-title_2'>{apparts.location}</h2>
+            <h1 className='presentation-police-title'>{lodging.title}</h1>
+            <h2 className='presentation-police-title_2'>{lodging.location}</h2>
+            <div className='presentation_host'></div>
         </div><div className='tag-form'>
-                <p className='tag-police'>{apparts.tags}</p>
+                <p className='tag-police'></p>
             </div></>
-
     )
 }

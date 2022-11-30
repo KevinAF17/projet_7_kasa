@@ -1,14 +1,16 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 import '../styles/carousel.css';
 import LeftArrow from '../Images/LeftArrow.png';
 import RightArrow from '../Images/ArrowRight.png';
-import {locations} from "./locations";
+import apparts from '../logements.json';
 
-export default function Carousel(img){
-    let {id} = useParams()
-    const apparts = locations.getOneAppartment(id)
+
+export default function Carousel(img){ 
+
+    const{id} = useParams()
+    const lodging = apparts.find((lodging) => lodging.id === id)
 
     const [old, next] = useState(0);
 
@@ -25,12 +27,13 @@ export default function Carousel(img){
     return (
         <section className="carousel-container">
             <div className="carousel-sliders">
-                <img src={apparts.pictures} alt={apparts.title} className="carousel-image" key={apparts.id} />
-            </div>
-            <img src={LeftArrow} className={img.length === 1 ? "carousel-slideToleftBis" : "carousel-slideToleft"} alt="flèche gauche" onClick={slideLeft} />
+                <img src={lodging.pictures} alt={lodging.title} className="carousel-image" key={lodging.id} />
+                <img src={LeftArrow} className={img.length === 1 ? "carousel-slideToleftBis" : "carousel-slideToleft"} alt="flèche gauche" onClick={slideLeft} />
             <div className={img.length === 1 ? "carousel-numbersBis" : "carousel-numbers"}> {old +1}/{img.length} </div>
 
             <img src={RightArrow} className={img.length === 1 ? "carousel-slideTorightBis" : "carousel-slideToright"} alt="flèche droite" onClick={slideRight} />
+            </div>
+           
         </section>
     )
 }

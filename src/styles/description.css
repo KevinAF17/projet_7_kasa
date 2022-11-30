@@ -1,9 +1,9 @@
 .description-title{
     background: #FF6060;
     border-radius: 5px;
-    margin-left: 210px;
     margin-bottom: 20px;
-    width: 500px;
+    margin-right: 110px;
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
@@ -20,6 +20,8 @@
 .description-button{
     background: #FF6060;
     width: 50px;
+    height: 0px;
+    padding-left: 475px;
     border: none;
 }
 

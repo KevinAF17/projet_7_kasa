@@ -1,15 +1,15 @@
 import '../styles/description.css';
 import { useState } from 'react';
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 import Arrow from '../Images/Arrow.png';
 import Arrow2 from '../Images/ArrowTop.png';
-import {locations} from "../components/locations";
+import apparts from '../logements.json';
 
 
 export default function Equipment(){
 
-    let {id} = useParams()
-    const apparts = locations.getOneAppartment(id)
+    const{id} = useParams()
+    const lodging = apparts.find((lodging) => lodging.id === id)
     
     const [dropped, open]= useState(false)
     
@@ -20,7 +20,7 @@ export default function Equipment(){
     ) : (
         <div className='description-title' onClick={() => open(true)}>
                 <p className='description-titlePolice'> Description <button className='description-button'> <img src={Arrow2} className='description-hideAndshow-Arrow' alt='Flèche' /> </button> </p> 
-                 <div className='description-police'>{apparts.description}</div>
+                 <div className='description-police'>{lodging.description}</div>
             </div>
     )   
 }

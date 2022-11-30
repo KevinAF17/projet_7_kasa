@@ -1,26 +1,20 @@
 import React from "react";
-import '../styles/d_e.css';
+import '../styles/homepage.css';
 import Header from "../components/header";
 import Carousel from "../components/carousel";
 import Presentation from "../components/presentation";
-import Description from "../components/description"
-import Equipment from "../components/equipments";
+import D_E from "../components/des_equip"
 import Reliability from "../components/reliability";
 import Respect from "../components/respect";
 import Footer from "../components/footer";
 
 export default function AppartLocation() {
-
-
     return (
-        <div className= 'home'>  
+        <div>  
             <Header />
-            <Carousel />
+            <Carousel/>
             <Presentation />
-            <div className= 'inlines'>
-            <Description />
-            <Equipment />
-            </div>
+            <D_E />
             <Reliability /> 
             <Respect />
             <Footer/>
