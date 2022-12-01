@@ -9,6 +9,7 @@ import apparts from '../logements.json';
 export default function Equipment(){
     const{id} = useParams()
     const lodging = apparts.find((lodging) => lodging.id === id)
+    const equip = lodging.equipments;
 
     const [dropped, open]= useState(false)
     
@@ -19,7 +20,13 @@ export default function Equipment(){
     ) : (
         <div className='equipments-title' onClick={() => open(true)}>
                 <p className='equipments-titlePolice'> Equipements <button className='equipments-button'> <img src={Arrow2} className='equipments-hideAndshow-Arrow' alt='Flèche' /> </button> </p> 
-                 <div className='equipments-police'>{lodging.description}</div>
+                 <div className='equipments-section'>
+                 {equip.map((equipNb) => (
+                    <div className="equipments-section" key={equipNb+lodging.id}>
+                        <p className="equipments-police">{equipNb}</p> 
+                    </div>
+                    ))}
+                 </div>
             </div>
     )   
 }

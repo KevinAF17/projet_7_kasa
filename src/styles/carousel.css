@@ -1,6 +1,9 @@
 .carousel-container{
     position: relative;
-    width: 1200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 1725px;
     height: 400px;
     border-radius: 25px;
 }
@@ -21,6 +24,7 @@
     object-fit: cover;
 }
 
+
 .carousel-slideToleft{
     position: absolute;
     height: 75px;
@@ -38,7 +42,7 @@
     position: relative;
     width: 45px;
     height: 75px;
-    left: 25px;
+    left: -45px;
     top: 8.50px;
     opacity: 85%;
 }

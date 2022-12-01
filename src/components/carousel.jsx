@@ -7,13 +7,14 @@ import RightArrow from '../Images/ArrowRight.png';
 import apparts from '../logements.json';
 
 
-export default function Carousel(img){ 
+export default function Carousel(){ 
 
     const{id} = useParams()
     const lodging = apparts.find((lodging) => lodging.id === id)
 
     const [old, next] = useState(0);
 
+    const img = lodging.pictures
     const length = img.length;
 
     const slideRight = () => {
@@ -27,11 +28,10 @@ export default function Carousel(img){
     return (
         <section className="carousel-container">
             <div className="carousel-sliders">
-                <img src={lodging.pictures} alt={lodging.title} className="carousel-image" key={lodging.id} />
+                    <img src={img[old]} alt={lodging.title} className="carousel-image" key={lodging.id} />
+                <div className={img.length === 1 ? "carousel-numbersBis" : "carousel-numbers"}> {old +1}/{img.length} </div>
                 <img src={LeftArrow} className={img.length === 1 ? "carousel-slideToleftBis" : "carousel-slideToleft"} alt="flèche gauche" onClick={slideLeft} />
-            <div className={img.length === 1 ? "carousel-numbersBis" : "carousel-numbers"}> {old +1}/{img.length} </div>
-
-            <img src={RightArrow} className={img.length === 1 ? "carousel-slideTorightBis" : "carousel-slideToright"} alt="flèche droite" onClick={slideRight} />
+                <img src={RightArrow} className={img.length === 1 ? "carousel-slideTorightBis" : "carousel-slideToright"} alt="flèche droite" onClick={slideRight} />
             </div>
            
         </section>
