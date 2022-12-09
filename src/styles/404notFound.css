@@ -19,7 +19,7 @@
         display: flex;
         justify-content: center;
         width: 85%;
-        height: 100%;
+        height: 90%;
         margin-left: 5px;
         flex-direction: column;
     }
@@ -87,10 +87,10 @@
 @media screen and (min-width: 768px) and (max-width: 995px){
     .not-found-police{
         display: flex;
-        justify-content: center;
         width: 95%;
-        height: 100%;
-        margin-left: 15%;
+        height: 50%;
+        margin-top: -110px;
+        margin-left: 20%;
         font-size: 30px;
         flex-direction: column;
     }
@@ -118,5 +118,10 @@
         margin-top: 550px;
         margin-left: 100%;
         margin-right: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .not-found-BackHome{
+        margin-top: 200px;
     }
 }
