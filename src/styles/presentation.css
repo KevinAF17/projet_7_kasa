@@ -5,6 +5,13 @@
     margin-left: 50px;
     width: 1400px;
 }
+@media screen and (max-width: 767px) {
+    .presentation_part{
+        margin-left: 5px;
+        width: 100%;
+        height: auto;
+    }
+}
 
 .presentation_section{
     display: flex;
@@ -12,6 +19,12 @@
     height: 200px ;
     margin-left: 160px;
     width: 1400px;
+}
+@media screen and (max-width: 767px) {
+    .presentation_section{
+        margin-left: 5px;
+        width: 100%;
+    }
 }
 
 .presentation-police-title{
@@ -24,9 +37,17 @@
 
 .presentation-police-title_2{
     color: #FF6060;
-    font-size: 100;
-    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 15px;
 }
+@media screen and (max-width: 767px) {
+    .presentation-police-title_2{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
 
 .presentation_host{
     display: flex;
@@ -36,7 +57,14 @@
     height: 80px;
     color: #FF6060;
     justify-content: right;
+    margin-top: 0px;
 }
+@media screen and (max-width: 767px) {
+    .presentation_host{
+        width: 10%;
+        padding-top: 230px;
+      }
+    }
 
 .presentation_name{
     width: 75px;
@@ -54,12 +82,29 @@
     flex-direction: row;
     width: 1700px;
 }
+@media screen and (max-width: 767px) {
+    .furtherDetails{
+        width: 52%;
+        height: 300px;
+        flex-direction: column;
+        margin-left: -5px;
+        margin-top: 20px;
+    }
+}
 
 .tag-section{
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
     width: 650px;
     justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+    .tag-section{
+        margin-left: 0px;
+        width: 35%;
+        margin-top: 0px
+    }
 }
 
 .tag-form{
@@ -69,9 +114,15 @@
     height: 40px;
     flex-direction: row;
     background-color: #FF6060;
-    border-radius: 32px;
+    border-radius: 16px;
     margin-bottom: 16px;
     color: white;
+}
+@media screen and (max-width: 767px) {
+    .tag-form{
+        margin-left: 5px;
+        width: 100%;
+    }
 }
 
 .tag-police{
@@ -79,18 +130,38 @@
     width: 200px;
     justify-content: center;
 }
+@media screen and (max-width: 767px) {
+    .tag-police{
+        font-size: 11px;
+    }
+}
+
 
 .starContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 25px;
     padding-left: 640px;
     width: 200px;
     height: 35px;
     position: relative;
 }
+@media screen and (max-width: 767px) {
+    .starContainer{
+        padding-left: 10px;
+        width: 120px;
+        margin-top: 75px;
+    }
+}
 
 .star {    
     width: 30px;
     height: 30px;
+}
+@media screen and (max-width: 767px) {
+    .star{
+        width: 20px;
+        height: 20px
+    }
 }

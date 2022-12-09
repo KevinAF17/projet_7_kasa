@@ -5,6 +5,15 @@
     background: white;
     margin-left: 500px;
 }
+@media screen and (max-width: 767px) {
+    .not-foundPage{
+        display: flex;
+        justify-content: center;
+        width: 52%;
+        height: 100%;
+        margin-left: 5px;
+    }
+}
 
 .not-found-number{
     width: 1600px;
@@ -18,6 +27,19 @@
     display: flex;
     margin-top: 0px;
 }
+@media screen and (max-width: 767px) {
+    .not-found-number{
+        position: relative;
+        width: 99%;
+        margin-left: 83%;
+        font-size: 180px;
+        display: flex;
+        justify-content: center;
+        height: 309px;
+        flex-wrap: wrap;
+        margin-right: auto;
+      }
+    }
 
 .not-found-police{
     width: 1850px;
@@ -27,6 +49,18 @@
     line-height: 50px;
     color: #FF6060;
 }
+@media screen and (max-width: 767px) {
+    .not-found-police{
+        position: absolute;
+        width: 142%;
+        margin-top: 350px;
+        margin-left: 100%;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+      }
+    }
 
 .not-found-BackHome{
     width: 275px;
@@ -39,4 +73,15 @@
     align-items: flex-end;
     text-decoration: underline;
     margin: 300px;
+}
+@media screen and (max-width: 767px) {
+    .not-found-BackHome{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 142%;
+        margin-top: 550px;
+        margin-left: 100%;
+        margin-right: auto;
+    }
 }

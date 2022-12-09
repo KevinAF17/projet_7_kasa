@@ -14,19 +14,25 @@ export default function Equipment(){
     const [dropped, open]= useState(false)
     
     return dropped ? (
-        <div className='equipments-title' onClick={() => open(false)}> 
-                <p className='equipments-titlePolice'> Equipements <button className='equipments-button'> <img src={Arrow} className='equipments-hideAndshow-Arrow' alt='Flèche' /> </button> </p>
+        <div className='equipment-section'>
+        <div className='equipments-container' onClick={() => open(false)}> 
+                <p className='equipments-title'> Equipements 
+                <button className='equipments-button'> <img src={Arrow} className='equipments-hideAndshow-Arrow' alt='Flèche' /> </button>
+                </p>
             </div>
+        </div>
     ) : (
-        <div className='equipments-title' onClick={() => open(true)}>
-                <p className='equipments-titlePolice'> Equipements <button className='equipments-button'> <img src={Arrow2} className='equipments-hideAndshow-Arrow' alt='Flèche' /> </button> </p> 
+        <div className='equipment-section'>
+        <div className='equipments-container' onClick={() => open(true)}>
+                <p className='equipments-title'> Equipements
+                <button className='equipments-button'> <img src={Arrow2} className='equipments-hideAndshow-Arrow' alt='Flèche' /> </button>
+                </p> 
                  <div className='equipments-section'>
                  {equip.map((equipNb) => (
-                    <div className="equipments-section" key={equipNb+lodging.id}>
-                        <p className="equipments-police">{equipNb}</p> 
-                    </div>
+                        <p key={equipNb+lodging.id} className="equipments-content">{equipNb}</p> 
                     ))}
                  </div>
             </div>
+        </div>
     )   
 }

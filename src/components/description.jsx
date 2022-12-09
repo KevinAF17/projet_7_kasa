@@ -14,13 +14,23 @@ export default function Equipment(){
     const [dropped, open]= useState(false)
     
     return dropped ? (
-        <div className='description-title' onClick={() => open(false)}> 
-                <p className='description-titlePolice'> Description <button className='description-button'> <img src={Arrow} className='description-hideAndshow-Arrow' alt='Flèche' /> </button> </p>
+        <div className='description-section'>
+        <div className='description-container' onClick={() => open(false)}> 
+                <p className='description-title'> Description 
+                <button className='description-button'> <img src={Arrow} className='description-hideAndshow-Arrow' alt='Flèche' /> </button>
+                </p>
             </div>
+        </div>
     ) : (
-        <div className='description-title' onClick={() => open(true)}>
-                <p className='description-titlePolice'> Description <button className='description-button'> <img src={Arrow2} className='description-hideAndshow-Arrow' alt='Flèche' /> </button> </p> 
-                 <div className='description-police'>{lodging.description}</div>
+        <div className='description-section'>
+        <div className='description-container' onClick={() => open(true)}>
+                <p className='description-title'> Description 
+                <button className='description-button'> <img src={Arrow2} className='description-hideAndshow-Arrow' alt='Flèche' /> </button>
+                </p>
+                 <div className='description-square'>
+                    <p className='description-police'>{lodging.description}</p>
+                </div>
             </div>
+        </div>
     )   
 }

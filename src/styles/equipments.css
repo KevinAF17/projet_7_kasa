@@ -1,8 +1,14 @@
-.equipments-title{
+.equipment-section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.equipments-container{
     background: #FF6060;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 20px;
-    width: 700px;
+    width: 690px;
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
@@ -10,40 +16,84 @@
     line-height: 35px;
     color: #FFFFFF;
 }
+@media screen and (max-width: 767px){
+    .equipments-container{
+        margin-left: 10px;
+        width: 95%;
+    }
+}
 
-.equipments-titlePolice{
+.equipments-title{
     margin-left: 15px;
     display: flex;
+}
+@media screen and (max-width: 767px){
+    .equipments-title{
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .equipments-button{
     background: #FF6060;
     width: 50px;
-    height: 0px;
     padding-left: 450px;
     border: none;
 }
-
-.equipments-hideAndshow-Arrow{
-    width: 50px;
+@media screen and (max-width: 767px){
+    .equipments-button{
+        padding-left: 0px;
+    }
 }
 
-.equipments-section{
+.equipments-hideAndshow-Arrow{
+    width: 40px;
+}
+@media screen and (max-width: 767px){
+    .equipments-hideAndshow-Arrow{
+        width: 30px;
+    }
+}
+
+.equipments-elements{
     background: #F7F7F7;
     width: 700px;
 }
 
-.equipments-police{
+.equipments-section{
     background: #F7F7F7;
     color: #FF6060;
-    border-radius: 5px;
+    width: 660px;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-bottom: 5px;;
-    width: 500px;
+    padding: 15px;
     font-weight: 350;
     font-size: 25px;
+    height: 300px;
+}
+@media screen and (max-width: 767px){
+    .equipments-section{
+        width: 100%;
+        padding: 2px;
+        font-size: 17.5px;
+    }
+}
+
+
+.equipments-content{
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 350;
+    font-size: 25px;
+    padding: 2px;
+    margin: 0px;
+}
+@media screen and (max-width: 767px){
+    .equipments-content{
+        width: 96%;
+        padding: 2px;
+        font-size: 17.5px;
+        margin-left: auto;
+    }
 }

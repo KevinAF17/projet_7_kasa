@@ -1,11 +1,28 @@
 .footer {
     position: relative;
-    margin-top: 200px;
     width: 1950px;
     height: 215px;
     background: black;
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
+}
+@media screen and (max-width: 767px) {
+    .footer{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        margin-top: 200px;
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .footer{
+        position: absolute;
+        margin-top: 200px;
+        width: 100%;
+        height: 80%;
+    }
 }
     
 .footer-logo {
@@ -19,6 +36,25 @@
     margin-top: 50px;
     margin-bottom: 15px;
 }
+@media screen and (max-width: 767px) {
+    .footer-logo{
+        position: absolute;
+        justify-content: center;
+        width: 38%;
+        height: 50px;
+        margin-top: 75px;
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .footer-logo{
+        width: 40%;
+        height: 80px;
+        margin-top: 75px;
+        margin-left: 30%;
+        margin-bottom: 10px;
+    }
+}
     
 .footer-police {
     position: absolute;
@@ -29,4 +65,22 @@
     font-size: 25px;
     display: flex; 
     color: white;
+}
+@media screen and (max-width: 767px) {
+    .footer-police{
+        position: absolute;
+        justify-content: center;
+        width: 95%;
+        height: 50px;
+        margin-left: 1.5%;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .footer-police{
+        width: 55%;
+        height: 80px;
+        margin-top: 260px;
+        margin-left: 28%;
+    }
 }

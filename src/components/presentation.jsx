@@ -12,12 +12,11 @@ export default function AppartPresentation(){
     const ratings = lodging.rating
     const tag = lodging.tags
 
-    return(
-        <>
+    return(   
             <div className='presentation_part'>
                     <div className='presentation_section'>
                         <h1 className='presentation-police-title'>{lodging.title}</h1>
-                        <h2 className='presentation-police-title_2'>{lodging.location}</h2>
+                        <span className='presentation-police-title_2'>{lodging.location}</span>
                         <div className='furtherDetails'>                           
                             <div className='tag-section'>
                                 {tag.map((tagsNb) => (
@@ -42,6 +41,5 @@ export default function AppartPresentation(){
                         <img src={lodging.host.picture} className='host_img' alt="proprio" key={lodging.id}/>
                     </div>
             </div>
-        </>
     )
 }

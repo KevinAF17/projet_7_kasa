@@ -1,3 +1,4 @@
+import React from 'react';
 import Home from './pages/homepage';
 import About from './pages/about-page';
 import Appartments from './pages/appartments'
@@ -11,6 +12,8 @@ export default function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/appartements/:id" element={<Appartments/>}/>
             <Route path="/404notFound" element={<ErrorPage/>}/>
+            <Route path="/appartements/*" element={<ErrorPage/>}/>
+            <Route path="/*" element={<ErrorPage/>}/>
         </Routes>
     )
 }

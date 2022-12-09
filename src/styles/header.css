@@ -1,14 +1,33 @@
 header{
     display: flex;
     justify-content: space-between;
-    width: 1550px;
+    width: 1520px;
     margin-left: 200px;
     margin-top: 50px;
+}
+@media screen and (max-width: 767px){
+    header{
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    header{
+        width: 90%;
+        margin-left: 45px;
+    }
 }
 
 .header-logo{
     width: 215px;
     height: 80px;
+}
+@media screen and (max-width: 767px){
+    .header-logo{
+        width: 160px;
+        height: 50px;
+        margin-left: 10px;
+    }
 }
 
 .header-nav{
@@ -17,21 +36,31 @@ header{
     align-items: center;
     width: 300px;
 }
+@media screen and (max-width: 767px){
+    .header-nav{
+        width: 135px;
+        margin-left: 50px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .header-nav{
+        width: 35%;
+        margin-left: 20px;
+    }
+}
 
 .nav-style {
     text-decoration: none;
     color: red;
     font-size: 20px;
 }
+@media screen and (max-width: 767px){
+    .nav-style{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
 
 .nav-style:hover{
     text-decoration: underline;
-}
-
-.header-navigation{
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-    margin-left: 800px;
-    margin-top: 30px
 }

@@ -11,10 +11,37 @@
     line-height: 35px;
     color: #FFFFFF;
 }
+@media screen and (max-width: 767px){
+    .aboutPage-title{
+        margin-left: 20px;
+        width: 92%;
+    }
+}
 
 .aboutPage-titlePolice{
     margin-left: 15px;
     display: flex;
+}
+@media screen and (max-width: 767px){
+    .aboutPage-titlePolice{
+        margin-left: 15px;
+        width: 102%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.aboutPage-titlePolice2{
+    margin-left: 15px;
+    display: flex;
+}
+@media screen and (max-width: 767px){
+    .aboutPage-titlePolice2{
+        margin-left: 15px;
+        width: 87%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .aboutPage-section {
@@ -29,6 +56,12 @@
     justify-content: space-around;
     flex-wrap: wrap;  
 }
+@media screen and (max-width: 767px){
+    .aboutPage-section{
+        left: 5px;
+        top: 10px;
+    }
+}
 
 .aboutPage-button{
     background: #FF6060;
@@ -36,13 +69,23 @@
     padding-left: 1300px;
     border: none;
 }
+@media screen and (max-width: 767px){
+    .aboutPage-button{
+        padding-left: 0px;
+    }
+}
 
 .aboutPage-hideAndshow-Arrow{
-    width: 50px;
+    width: 40px;
+}
+@media screen and (max-width: 767px){
+    .aboutPage-hideAndshow-Arrow{
+        width: 30px;
+    }
 }
 
 .aboutPage-police{
-    background: #F7F7F7;
+    background-color: #F7F7F7;
     color: #FF6060;
     border-radius: 5px;
     display: flex;
@@ -50,6 +93,10 @@
     align-items: center;
     font-weight: 350;
     font-size: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px;
+}
+@media screen and (max-width: 767px){
+    .aboutPage-police{
+        font-size: 17.5px;
+    }
 }
