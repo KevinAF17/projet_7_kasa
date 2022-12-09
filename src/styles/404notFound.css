@@ -14,6 +14,17 @@
         margin-left: 5px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .not-foundPage{
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        height: 100%;
+        margin-left: 5px;
+        flex-direction: column;
+    }
+}
+
 
 .not-found-number{
     width: 1600px;
@@ -39,7 +50,19 @@
         flex-wrap: wrap;
         margin-right: auto;
       }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .not-found-number{
+        position: relative;
+        width: 70%;
+        font-size: 240px;
+        display: flex;
+        justify-content: center;
+        height: 309px;
+        flex-wrap: wrap;
+        margin-right: auto;
     }
+}
 
 .not-found-police{
     width: 1850px;
@@ -60,7 +83,19 @@
         justify-content: center;
         font-size: 22px;
       }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .not-found-police{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 100%;
+        margin-left: 15%;
+        font-size: 30px;
+        flex-direction: column;
     }
+}
+
 
 .not-found-BackHome{
     width: 275px;
