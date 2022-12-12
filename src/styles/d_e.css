@@ -1,11 +1,12 @@
 .inlines {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: 50px;
-    margin-left: 200px;
     position: relative;
-    width: 1490px;
+    width: 90%;
+    margin-left: 7.5%;
     background: white;
 }
 

@@ -1,8 +1,7 @@
 .mainHome-section {
     position: relative;
-    width: 1600px;
-    height: 2850px;
-    left: 175px;
+    width: 87%;
+    left: 125px;
     border-radius: 25px;
     background: #EEEAEA;
     display: flex;
@@ -54,4 +53,15 @@
     color: #FFFFFF;
     display: flex;
     align-items: flex-end;
+}
+@media screen and (max-width: 767px) {
+    .mainHome-title{
+        width: 44%;
+        justify-content: left;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .mainHome-title{
+        width: 39%;
+    }
 }

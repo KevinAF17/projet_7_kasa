@@ -1,9 +1,9 @@
 .aboutPage-title{
     background: #FF6060;
     border-radius: 5px;
-    margin-left: 200px;
+    margin-left: 65px;
     margin-bottom: 20px;
-    width: 1500px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
@@ -27,6 +27,8 @@
 .aboutPage-titlePolice{
     margin-left: 15px;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 @media screen and (max-width: 767px){
     .aboutPage-titlePolice{
@@ -47,6 +49,8 @@
 .aboutPage-titlePolice2{
     margin-left: 15px;
     display: flex;
+    width: 85%;
+    justify-content: space-between;
 }
 @media screen and (max-width: 767px){
     .aboutPage-titlePolice2{
@@ -86,7 +90,6 @@
 .aboutPage-button{
     background: #FF6060;
     width: 50px;
-    padding-left: 1300px;
     border: none;
 }
 @media screen and (max-width: 767px){

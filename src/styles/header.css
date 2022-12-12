@@ -1,8 +1,8 @@
 header{
     display: flex;
     justify-content: space-between;
-    width: 1520px;
-    margin-left: 200px;
+    width: 83%;
+    margin-left: 65px;
     margin-top: 50px;
 }
 @media screen and (max-width: 767px){
@@ -34,7 +34,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 25%;
 }
 @media screen and (max-width: 767px){
     .header-nav{

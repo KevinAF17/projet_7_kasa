@@ -2,13 +2,27 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 55%;
+}
+@media screen and (max-width: 767px){
+    .equipment-section{
+        margin-left: 10px;
+        width: 95%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 995px){
+    .equipment-section{
+        margin-left: 10px;
+        margin-top: 5%;
+        width: 99%;
+    }
 }
 
 .equipments-container{
     background: #FF6060;
     border-radius: 20px;
     margin-bottom: 20px;
-    width: 690px;
+    width: 90.5%;
     display: flex;
     flex-wrap: wrap;
     font-weight: 500;
@@ -33,6 +47,8 @@
 .equipments-title{
     margin-left: 15px;
     display: flex;
+    width: 94%;
+    justify-content: space-between;
 }
 @media screen and (max-width: 767px){
     .equipments-title{
@@ -50,7 +66,6 @@
 .equipments-button{
     background: #FF6060;
     width: 50px;
-    padding-left: 450px;
     border: none;
 }
 @media screen and (max-width: 767px){
@@ -81,13 +96,12 @@
 .equipments-section{
     background: #F7F7F7;
     color: #FF6060;
-    width: 660px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 15px;
     font-weight: 350;
     font-size: 25px;
-    height: 300px;
+    padding-top: 2%
 }
 @media screen and (max-width: 767px){
     .equipments-section{
@@ -113,6 +127,7 @@
     font-size: 25px;
     padding: 2px;
     margin: 0px;
+    margin-left: 2%;
 }
 @media screen and (max-width: 767px){
     .equipments-content{

@@ -3,7 +3,7 @@
     flex-direction: row;
     height: 200px ;
     margin-left: 50px;
-    width: 1400px;
+    width: 90%;
 }
 @media screen and (max-width: 767px) {
     .presentation_part{
@@ -23,8 +23,8 @@
     display: flex;
     flex-direction: column;
     height: 200px ;
-    margin-left: 160px;
-    width: 1400px;
+    margin-left: 80px;
+    width: 850%;
 }
 @media screen and (max-width: 767px) {
     .presentation_section{
@@ -41,10 +41,17 @@
 
 .presentation-police-title{
     color: #FF6060;
-    width: 400px;
+    width: 90%;
     font-size: 400;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+@media screen and (max-width: 767px) {
+    .presentation-police-title{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 .presentation-police-title_2{
@@ -60,7 +67,6 @@
     }
 }
 
-
 .presentation_host{
     display: flex;
     flex-direction: row;
@@ -74,7 +80,7 @@
 @media screen and (max-width: 767px) {
     .presentation_host{
         width: 10%;
-        padding-top: 230px;
+        padding-top: 285px;
       }
     }
 
@@ -92,7 +98,10 @@
 .furtherDetails{
     display: flex;
     flex-direction: row;
-    width: 1700px;
+    width: 106%;
+    justify-content: space-between;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 @media screen and (max-width: 767px) {
     .furtherDetails{
@@ -116,8 +125,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 25px;
-    width: 650px;
-    justify-content: space-between;
+    width: 44%;
 }
 @media screen and (max-width: 767px) {
     .tag-section{
@@ -136,6 +144,7 @@
     background-color: #FF6060;
     border-radius: 16px;
     margin-bottom: 16px;
+    margin-right: 1%;
     color: white;
 }
 @media screen and (max-width: 767px) {
@@ -162,7 +171,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 25px;
-    padding-left: 640px;
     width: 200px;
     height: 35px;
     position: relative;
