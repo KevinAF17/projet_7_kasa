@@ -9,13 +9,13 @@ export default function ReliabilityDrop(){
     
     return dropped ? (
         <div className='aboutPage-title' onClick={() => open(false)}> 
-                <p className='aboutPage-titlePolice'> Service <button className='aboutPage-button'> <img src={Arrow} className='aboutPage-hideAndshow-Arrow' alt='Flèche' /> </button> </p>
-                 
+                <p className='aboutPage-titlePolice'> Service <button className='aboutPage-button'> <img src={Arrow} className='aboutPage-hideAndshow-Arrow' alt='Flèche' /> </button> 
+                </p>
             </div>
     ) : (
         <div className='aboutPage-title' onClick={() => open(true)}> 
-                <p className='aboutPage-titlePolice2'> Service </p> 
-                 <button className='aboutPage-button'> <img src={Arrow2} className='aboutPage-hideAndshow-Arrow' alt='Flèche' /> </button>
+                <p className='aboutPage-titlePolice'> Service 
+                 <button className='aboutPage-button'> <img src={Arrow2} className='aboutPage-hideAndshow-Arrow' alt='Flèche' /> </button> </p>
                  <div className='aboutPage-police'>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N’hésitez pas à nous contacter si vous avez la moindre question.</div>
             </div>
     )   
